@@ -8,6 +8,7 @@ def main():
     
     reach_bb=[]
     # 因为angr的basicblock的定义和ida这类工具的定义不太一样
+    # 不排除的话这些地址是没用的,尤其是要写ida\binaryninja插件这种的
     noisy=[]
     
     while len(simgr.active):
